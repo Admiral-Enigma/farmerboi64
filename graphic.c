@@ -30,9 +30,9 @@ Gfx rdpinit_dl[] = {
     gsDPSetColorDither(G_CD_DISABLE),
     gsDPPipeSync(),
     gsSPEndDisplayList(),
-}
+};
 
-void RCPInit(Gfx * glistp)
+void RCPInit(Gfx *glistp)
 {
   gSPSegment(glistp++, 0, 0);
   gSPDisplayList(glistp++, OS_K0_TO_PHYSICAL(rspinit_dl));

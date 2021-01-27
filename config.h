@@ -6,8 +6,8 @@
 
 #define GLIST_LENGTH 2048
 
-Gfx glist[GLIST_LENGTH];
 Gfx *glistp;
+Gfx glist[GLIST_LENGTH];
 void RCPInit(Gfx *glistp);
 
 #endif

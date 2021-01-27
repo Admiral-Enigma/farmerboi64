@@ -1,3 +1,4 @@
+#include <nusys.h>
 #include "config.h"
 
 void ClearBackgound(u8 r, u8 g, u8 b);
