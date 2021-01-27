@@ -13,6 +13,7 @@ void callback_prenmi()
 
 void mainproc(void *dummy)
 {
+  /*
   if (TV_TYPE == PAL)
   {
     osViSetMode(&osViModeTable[OS_VI_FPAL_LAN1]);
@@ -20,7 +21,9 @@ void mainproc(void *dummy)
     nuPreNMIFuncSet((NUScPreNMIFunc)callback_prenmi);
   }
   else if (TV_TYPE == MPAL)
+  {
     osViSetMode(&osViModeTable[OS_VI_MPAL_LAN1]);
+  }*/
 
   nuGfxInit();
   stage00_init();
