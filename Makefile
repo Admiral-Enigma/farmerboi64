@@ -34,5 +34,6 @@ $(CODESEGMENT): $(CODEOBJECTS)
  
 $(ROM) :  $(OBJECTS)
     	$(MAKEROM) spec -I$(NUSYSINC) -r $(ROM) -e $(SYMBOL) 
+			makemask $(TARGETS)
  
 include $(ROOT)/usr/include/make/commonrules
