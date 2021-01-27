@@ -2,20 +2,23 @@
 #include "config.h"
 
 void ClearBackgound(u8 r, u8 g, u8 b);
+static u8 b;
 
 void stage00_init(void)
 {
+  b = 255;
 }
 
 void stage00_update(void)
 {
+  b -= 5;
 }
 
 void stage00_draw(void)
 {
   glistp = glist;
   RCPInit(glistp);
-  ClearBackgound(0, 0, 255);
+  ClearBackgound(32, 32, b);
 
   gDPFullSync(glistp++);
   gSPEndDisplayList(glistp++);
